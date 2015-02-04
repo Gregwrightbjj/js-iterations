@@ -33,7 +33,7 @@ describe("Array", function(){
     it("should have a number divide function", function(){
 
       expect(divide(6, 3)).to.equal(2);
-      expect(divide(3.3, 1.1)).to.equal(3);
+      expect(divide(3, 1)).to.equal(3);
       expect(divide(5, 1)).to.equal(5);
 
     });

@@ -3,7 +3,7 @@
   It should return the value of the number times 2.
 */
 var doubler = function(number) {
-
+  return number * 2;
 }
 
 /*
@@ -11,7 +11,11 @@ var doubler = function(number) {
   It should return an array, with each number in the array being doubled.
 */
 var arrayDoubler = function(array) {
+  var a = [];
+    for(i = 0 ;i < array.length;i++){
+    a.push(doubler(array[i]));
 
+  }return a;
 }
 
 /*
@@ -19,6 +23,7 @@ var arrayDoubler = function(array) {
   It should return the first number, divided by the second number.
 */
 var divide = function(numerator, denominator) {
+  return numerator / denominator;
 
 }
 
@@ -27,7 +32,10 @@ var divide = function(numerator, denominator) {
   It should return an array, with each member of the array being divided by the parameter number.
 */
 var arrayDivide = function(array, denominator) {
-
+  var a = [];
+    for (i = 0; i < array.length; i++){
+    a.push(divide(array[i],denominator));
+  }return a;
 }
 
 /*
@@ -35,6 +43,7 @@ var arrayDivide = function(array, denominator) {
   It should return the sum of the two numbers.
 */
 var sum = function(a, b) {
+  return a + b;
 
 }
 
@@ -43,6 +52,11 @@ var sum = function(a, b) {
   It should return the sum of all the members in the array.
 */
 var arraySum = function(array) {
+  var a = 0;
+  for (i = 0; i < array.length; i++){
+    a = sum(array[i], a);
+
+  }return a;
 
 }
 
@@ -51,6 +65,9 @@ var arraySum = function(array) {
   It should return the lower of the two numbers.
 */
 var minimum = function(a, b) {
+  if(a > b){
+    return b;
+  }else return a;
 
 }
 
@@ -60,6 +77,13 @@ var minimum = function(a, b) {
   If the array has a length = 0, it should return undefined.
 */
 var arrayMinimum = function(array) {
+  var a =0;
+  for (i = 0; i < array.length; i++){
+    a = minimum(array[i],)
+  }
+
+
+
 
 }
 
