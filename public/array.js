@@ -77,13 +77,10 @@ var minimum = function(a, b) {
   If the array has a length = 0, it should return undefined.
 */
 var arrayMinimum = function(array) {
-  var a =0;
+  var a = 0;
   for (i = 0; i < array.length; i++){
-    a = minimum(array[i],)
-  }
-
-
-
+   a = minimum(array[i], a);
+  }return a;
 
 }
 
@@ -93,8 +90,8 @@ var arrayMinimum = function(array) {
   Otherwise, it should return false.
 */
 var endsInPeriod = function(string) {
-  
-}
+  }
+
 
 /*
   This functions hould accept an array of strings as a parameter.
@@ -111,6 +108,11 @@ var arrayEndsInPeriod = function(array) {
   Otherwise, it should return false.
 */
 var multiple3 = function(number) {
+  if(number % 3 === 0){
+    return true;
+  }else
+  return false;
+
   
 }
 
@@ -120,6 +122,11 @@ var multiple3 = function(number) {
     from the original array which are multiples of 3.
 */
 var arrayMultiple3 = function(array) {
+  var a = [];
+  for(i=0; i < array.length; i++){
+    a.push(multiple3(array[i]));
+  }
+return a;
 
 }
 
