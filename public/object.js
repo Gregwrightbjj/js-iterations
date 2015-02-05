@@ -6,6 +6,8 @@
   For instance, [ "a", "b", "c", "b" ] would produce { "a": 1, "b": 2, "c": 1 }
 */
 var frequency = function(number) {
+  
+
 
 }
 

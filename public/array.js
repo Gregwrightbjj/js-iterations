@@ -90,6 +90,12 @@ var arrayMinimum = function(array) {
   Otherwise, it should return false.
 */
 var endsInPeriod = function(string) {
+  var b = string[string.length-1];
+  
+  if (b == "."){
+    return true;
+  }else
+  return false;
   }
 
 
@@ -99,7 +105,15 @@ var endsInPeriod = function(string) {
     from the original array which end with a period.
 */
 var arrayEndsInPeriod = function(array) {
-
+  var a = [];
+  for(i=0; i < array.length; i++){
+    if (endsInPeriod(array[i])){
+      a.push(array[i]);
+    }
+    
+      
+  }
+return a;
 }
 
 /*
@@ -110,8 +124,9 @@ var arrayEndsInPeriod = function(array) {
 var multiple3 = function(number) {
   if(number % 3 === 0){
     return true;
-  }else
-  return false;
+  }
+  else
+    return false;
 
   
 }
@@ -123,8 +138,12 @@ var multiple3 = function(number) {
 */
 var arrayMultiple3 = function(array) {
   var a = [];
-  for(i=0; i < array.length; i++){
-    a.push(multiple3(array[i]));
+    for(i=0; i < array.length; i++){
+    if (multiple3(array[i])){
+      
+    a.push(array[i]);
+    }
+    
   }
 return a;
 
